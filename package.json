@@ -1,0 +1,19 @@
+{
+  "name": "andrwh.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@personal:andrwh/andrwh.com.git"
+  },
+  "author": "Andrew Ho <andrwho25@gmail.com> (http://www.andrwh.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
