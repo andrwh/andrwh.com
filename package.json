@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "echo 'http://localhost:4003/index-dev.html'; webpack-dev-server --config webpack-dev-server.config.js --hot --progress --colors --port 4003 --content-base ."
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,14 @@
   "author": "Andrew Ho <andrwho25@gmail.com> (http://www.andrwh.com)",
   "license": "MIT",
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0"
   }
 }
