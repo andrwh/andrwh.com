@@ -30,6 +30,6 @@
     "bluebird": "^3.4.6",
     "classlist-polyfill": "^1.0.3",
     "markdown": "^0.5.0",
-    "mouse-wheel": "^1.2.0",
+    "mouse-wheel": "^1.2.0"
   }
 }
