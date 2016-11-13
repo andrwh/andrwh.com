@@ -3,6 +3,7 @@ var path = require('path');
 module.exports = {
     context: __dirname,
     entry: [
+      "babel-polyfill",
       "webpack-dev-server/client?http://localhost:4003",
       "./app.js"
     ],
