@@ -1,0 +1,36 @@
+andrwh.com
+=========
+
+Andrew Ho
+Frontend / NodeJS Developer
+
+
+Contact
+-------
+
+* andrwho25@gmail.com
+* andrew9183 on irc.freenode.net
+
+
+Tech stuff
+----------
+
+Javascript, React, Redux
+NodeJS, Mongo, Firebase
+PHP, Apache, Wordpress, MySQL
+Ruby, Python, C#
+
+
+Companies I've Worked With
+--------------------------
+
+* Kamcord (YC S12)
+* Deloitte
+* Pepsi / Doritos
+* Konrad Group
+* And lots more.
+
+Hobbies
+-------
+
+Tennis, Photography, Video Games, Music, RC

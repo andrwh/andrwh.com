@@ -2,6 +2,9 @@ require('style!css!./basestyles.css')
 import 'classlist-polyfill'
 import preStyles from 'raw!./styles/prestyles.css'
 import Promise from 'bluebird'
+import Markdown from 'markdown';
+const md = Markdown.markdown.toHTML;
+import workText from 'raw!./work.txt';
 import getPrefix from './lib/getPrefix'
 import replaceURLs from './lib/replaceURLs'
 import {default as writeChar, writeSimpleChar, handleChar} from './lib/writeChar'
@@ -9,7 +12,7 @@ import {default as writeChar, writeSimpleChar, handleChar} from './lib/writeChar
 // Variables
 const isDev = window.location.hostname === 'localhost';
 const speed = isDev ? 0 : 16;
-let styleText = [0].map((i) => { return require(`raw!./styles/styles${i}.css`)})
+let styleText = [0, 1, 2, 3].map((i) => { return require(`raw!./styles/styles${i}.css`)})
 let style, styleElement, workElement, skipAnimationElement, pauseElement
 let animationSkipped = false, paused = false, done = false, browserPrefix
 
@@ -25,7 +28,14 @@ const initialize = () => {
 
 async function startAnimation() {
   try {
-    await writeTo(styleElement, styleText[0], 0, speed, true, 1)
+    await writeTo(styleElement, styleText[0], 0, speed, true, 1);
+    await writeTo(workElement, workText, 0, speed, false, 1);
+    // await writeTo(styleElement, styleText[1], 0, speed, true, 1);
+    // createWorkBox();
+    await Promise.delay(1000);
+    // await writeTo(styleElement, styleText[2], 0, speed, true, 1);
+    // await writeTo(pgpEl, pgpText, 0, speed, false, 32);
+    // await writeTo(styleElement, styleText[3], 0, speed, true, 1);
   }
 
   catch(e) {

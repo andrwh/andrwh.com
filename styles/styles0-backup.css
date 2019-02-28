@@ -1,15 +1,14 @@
 /**
  *
- * Hey. My name's Andrew Ho. I'm a passionate software engineer who loves
- * building beautiful interfaces.
+ * Hey. My name's Andrew Ho.
+ * I'm a software engineer who's passionate about beautifully designed interfaces
+ * and micro-interactions.
  *
- * I've built many prototypes that have went on to be world class apps.
- *
- * How about some live coding?
+ * How about we demonstrate by doing some live coding... right here in the browser!
  */
 
 /**
- * Let's begin. We start by animating... well, everything.
+ * Let's begin. We'll start off by animating... well, everything.
  */
 
 * {
@@ -17,31 +16,17 @@
 }
 
 /**
- * That didn't do much. Well, not yet.
+ * Welp, that didn't do too much.  For now...
  *
- * Black on white is really boring,
- * so let's do something about it.
+ * Let's add a background.
  */
-
-* {
-  filter: blur(20px);
-}
-
-/**
- * Oops, didn't mean to do that.
- *
- */
-
-* {
-  filter: none;
-}
 
 html {
   background: rgb(44, 50, 60);
 }
 
 /***
- * Hold on...
+ * Let's make it a little easier to read.
  */
 
 pre, a {
@@ -60,7 +45,9 @@ pre:not(:empty) {
   overflow: auto;
   background: rgb(48, 48, 48);
   border: 1px solid #ccc;
-  width: 100%;
+  max-height: 90%;
+  width: 90%;
+  margin: auto;
   font-size: 14px;
   font-family: monospace;
   padding: 10px 10px 20px;
@@ -70,14 +57,9 @@ pre:not(:empty) {
 }
 
 /**
- * Okay. We're going to start filling up the screen.
- * Let's get ready to do some work.
+ * Okay. We're going somewhere.  Let's continue by filling up the screen.
+ * We're going to get ready to do some work!
  */
-
-#style-text {
-  /*-webkit-transform: translateX(95%);*/
-  position: absolute;
-}
 
 /**
  * This is good, but all the text is white!
@@ -98,12 +80,6 @@ pre:not(:empty) {
 
 body {
   -webkit-perspective: 1000px;
-}
-
-#style-text {
-  /*-webkit-transform: translateX(98.5%) rotateY(-10deg);*/
-  -webkit-transform-origin: right;
-  max-height: 94.5%;
 }
 
 /**
